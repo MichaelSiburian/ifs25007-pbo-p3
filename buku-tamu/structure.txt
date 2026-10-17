@@ -1,0 +1,18 @@
+buku-tamu/
+├── src/
+│   ├── App.java
+│   ├── adapter/
+│   │   ├── presenter/GuestPresenter.java
+│   │   └── repository/{InMemoryRepository,GuestRepository}.java
+│   ├── domain/
+│   │   ├── entity/Guest.java
+│   │   ├── exception/{DomainException,EntityNotFoundException,ValidationException}.java
+│   │   └── repository/{IRepository,IGuestRepository}.java
+│   ├── framework/
+│   │   ├── util/InputUtil.java
+│   │   └── view/GuestView.java
+│   └── usecase/GuestUseCase.java
+└── structure.txt
+
+Compile : javac -d output -sourcepath src src/App.java
+Run     : java -cp output App
